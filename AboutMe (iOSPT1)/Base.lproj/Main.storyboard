@@ -57,23 +57,33 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9F-aJ-pUK">
+                                <rect key="frame" x="141" y="689" width="92" height="30"/>
+                                <state key="normal" title="introduceSelf"/>
+                                <connections>
+                                    <action selector="introduceSelfButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrd-bA-XjP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BMC-sw-aCH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="6z0-GB-naM"/>
                             <constraint firstItem="BMC-sw-aCH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LBr-ey-awP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o9F-aJ-pUK" secondAttribute="bottom" constant="59" id="Pd5-Gz-pQF"/>
                             <constraint firstItem="BMC-sw-aCH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="ToG-Ej-coF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BMC-sw-aCH" secondAttribute="trailing" constant="12" id="rx1-PJ-Ve2"/>
+                            <constraint firstItem="o9F-aJ-pUK" firstAttribute="centerX" secondItem="BMC-sw-aCH" secondAttribute="centerX" id="uFA-Y8-ZCE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hobbiesLabel" destination="PeS-bY-mmt" id="MVW-kq-8hv"/>
                         <outlet property="nameLabel" destination="hDN-lh-huD" id="LtM-t9-wnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-562" y="57"/>
+            <point key="canvasLocation" x="-1137" y="109"/>
         </scene>
     </scenes>
 </document>
